@@ -1,20 +1,20 @@
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView, View
+from django.views.generic import TemplateView
 from info.models import Publications, Hashtags, Contacts
 
 
 class HomeView(TemplateView):
    template_name = 'index.html'
    def get_context_data(self, **kwargs):
-        publication = PublicDetailView.objects.all()
-        paginator = Paginator(publication, 10)
-        page_number = self.request.GET['page']
+        publications = Publications.objects.filter(is_active=True)
+        paginator = Paginator(publications, 10)
+        page_number = self.request.GET.get('page')
         page_obj = paginator.get_page(page_number)
 
         context = {
-         'page_obj': page_obj
+            'publication_list': page_obj,
          }
         return context
 
@@ -29,7 +29,7 @@ class PublicDetailView(TemplateView):
       publication_pk = kwargs['pk']
       context = {
 
-         'publication': PublicDetailView.objects.get(id = publication_pk)
+         'publication': Publications.objects.get(id = publication_pk)
 
       }
       return context
@@ -52,8 +52,9 @@ class HomeSearchView(TemplateView):
    def get_context_data(self, **kwargs):
       search_word = self.request.GET['search']
       context = {
-         'detail-list': PublicDetailView.objects.get(
+         'detail-list': Publications.objects.get(
             Q(title__contains=search_word) | Q(description__contains=search_word)
          )
       }
       return context
+

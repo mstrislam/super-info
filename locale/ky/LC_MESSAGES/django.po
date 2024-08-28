@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-28 19:33+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\templates\index.html:15
+msgid "Супер инфо"
+msgstr ""
+
+#: .\templates\index.html:21
+msgid "Blog Home"
+msgstr ""
+
+#: .\templates\index.html:25
+msgid "Contact Us"
+msgstr ""
+
+#: .\templates\index.html:37
+msgid "Search..."
+msgstr ""
+
+#: .\templates\index.html:51
+msgid "New"
+msgstr ""
+
+#: .\templates\index.html:52
+msgid "Simple and useful HTML layout"
+msgstr ""
+
+#: .\templates\index.html:55
+msgid ""
+"There is a clickable image with beautiful hover effect and active title link "
+"for each post item. Left side is a sticky menu bar. Right side is a blog "
+"content that will scroll up and down."
+msgstr ""
+
+#: .\templates\index.html:58
+msgid "Hashtags:"
+msgstr ""
+
+#: .\templates\index.html:71
+msgid "Prev"
+msgstr ""
+
+#: .\templates\index.html:74
+msgid "Next"
+msgstr ""
+
+#: .\templates\index.html:78
+msgid "Page"
+msgstr ""
